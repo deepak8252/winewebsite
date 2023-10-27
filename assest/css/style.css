@@ -1,0 +1,304 @@
+*{
+    text-decoration: none !important;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Arimo', sans-serif;
+font-family: 'Hind', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif;
+}
+a ,p,h1,h2,h3,h4,h5,h6{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+h1{
+    font-size: 55px;
+    font-weight: 700;
+}
+h2{
+    font-size: 50px;
+    font-weight: 600;
+}
+h3{
+    font-size: 45px;
+    font-weight: 600;
+}
+h4,h5{
+    font-size: 30px;
+    font-weight: 500;
+}
+h6{
+    font-weight: 400 !important;
+}
+p{
+    text-align: justify;
+    font-size: 18px;
+    
+}
+a{
+    color: rgb(155, 15, 38) !important;
+}
+
+/* top head section start */
+.tophead{
+    padding: 30px 0px;
+}
+.tophead .top-left-side{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.top-left-side .left{
+    text-align: end;
+    padding: 20px 0px;
+}
+.top-left-side .right{
+    text-align: end;
+    padding: 20px 0px;
+    
+}
+.top-left-side .right a{
+    padding: 0px 10px;
+}
+.tophead .search-bar{
+    /* box-shadow: 2px 4px px 0px ; */
+}
+.tophead .search{
+    border: none;
+    width: 50%;
+}
+/* top head section end */
+
+.header .navbar .dropdown {
+    position: static;
+    transition: all .4s;
+
+}
+.header{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 666768;
+}
+.header .dropdown-menu a{
+    color: black !important;
+    text-transform: uppercase;
+    transition: all .4s;
+}
+.header .dropdown-menu a:hover{
+    color: rgb(155, 15, 38) !important;
+}
+.header .navbar .dropdown:hover .dropdown-menu{
+display: block;
+border: 2px solid black;
+}
+.dropdown-menu .border-left{
+    border-left: 2px solid grey;
+}
+.navbar .dropdown-menu_list{
+    position: absolute;
+    width: 60%;
+    margin:0 auto !important;
+    
+}
+.nav-item{
+    cursor: pointer;
+}
+.nav-item a{
+    color: black !important;
+    font-weight: 500 !important;
+    transition: all .4s;
+    font-size: 18px !important;
+}
+.nav-item a:hover{
+    color: rgb(155, 15, 38) !important;
+}
+/* tab section start */
+.btn-section{
+    width: 100%;
+    border: 4px solid  rgb(155, 15, 38);
+    padding: 20px 0px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.btn-section::before{
+    content: "";
+    font-size: 34px;
+position: absolute;
+left: -0px;
+top: 0;
+/* left: 0; */
+width: 10%;
+height: 10%;
+padding: 20px 0px;
+background-color: rgb(245, 212, 2);
+transition: all .4s;
+color: transparent;
+opacity: 0;
+
+}
+
+.btn-section:hover::before{
+left:0px;
+opacity: 1;
+width: 100%;
+height: 100%;
+color: white;
+z-index: -444; 
+}
+
+/* tab section end */
+/* spotlight section start */
+ .heading{
+position: relative;
+text-transform: capitalize;
+}
+ .heading::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    top: 0px;
+    left: 0px;
+    height: 1px;
+    /* background-color: red; */
+    border: 2px solid rgb(66, 64, 64);
+}
+ .heading::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    top: 0px;
+    right: 0px;
+    height: 1px;
+    /* background-color: red; */
+    border: 2px solid rgb(73, 70, 70);
+}
+.spotlight a{
+    color: black !important;
+    text-align: center;
+    display: block;
+    padding: 8px 2px;
+    font-size: 18px;
+}
+
+/* spotlight section end */
+/* gifting section start */
+.gifting .btn {
+align-items: center;
+display: flex;
+justify-content: center;
+}
+.gifting .btn a{
+    color: white !important;
+    padding: 3px 15px;
+}
+.gifting .btn button{
+    border-radius: 40px;
+    background-color:  rgb(155, 15, 38);
+    padding:3px 8px;
+    transition: all .4s;
+    outline: none;
+    border: none;
+}
+.gifting .btn button:hover{
+    background-color: rgb(206, 206, 5);
+}
+/* gifting section end */
+/* bestsellers section css start */
+
+.bestsellers .item{
+border-left: 2px solid gray;
+}
+.bestsellers .item .img-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.bestsellers .item .img-content a{
+    margin: 15px auto;
+    color: black !important;
+}
+.bestsellers .item .img-content button{
+    width: 50%;
+    background-color: rgb(155, 31, 31);
+    margin: auto;
+    border-radius: 30px;
+    padding: 0;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+button{
+    /* width: 50%; */
+    background-color: rgb(155, 31, 31);
+    margin: auto;
+    border-radius: 30px !important;
+    padding: 4px 16px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+button a{
+    color: white !important;
+    padding: 8px 0px;
+    display: block;
+    font-size: 16px;
+    margin: 0px !important;
+}
+.bestsellers .item .img-content button a{
+    color: white !important;
+    padding: 8px 0px;
+    display: block;
+    font-size: 16px;
+    margin: 0px !important;
+}
+.bestsellers .item .img-content h5{
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+.owl-nav{
+    display: none !important;
+}
+/* bestsellers section css end */
+/* discover section css start */
+.discover .img h5{
+text-align: center;
+margin-top: 15px;
+}
+/* discover section css end */
+/* follow section start */
+.follow a{
+    transition: all .4s;
+    color: black !important;
+}
+.follow a:hover{
+    color: rgb(160, 16, 16) !important;
+    cursor: pointer;
+}
+/* follow section end */
+.footer{
+    background-color: rgb(227, 218, 218);
+}
+.footer ul li a{
+    display: block;
+    padding: 3px 0px ;
+    color: black !important;
+    font-weight: 600;
+    transition: all .4s;
+}
+.footer ul li a:hover{
+    color: rgb(158, 32, 32) !important;
+}
+.footer .page ul li a{
+    padding: 9px 0px;
+    font-size: 25px;
+}
