@@ -302,3 +302,23 @@ margin-top: 15px;
     padding: 9px 0px;
     font-size: 25px;
 }
+.mobilenav{
+    display: none;
+}
+.mobilenav .top-left-side{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+/* media screen */
+@media screen and (max-width:899px) {
+    .header{
+        display: none !important;
+    }
+    .tophead{
+        display: none;
+    }
+    .mobilenav{
+        display:block;
+    }
+}
